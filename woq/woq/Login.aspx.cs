@@ -1,12 +1,19 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Web.UI;
+using System.Data.SqlClient; //this namespace is for sqlclient server  
+using System.Configuration; //
 
 namespace woq
 {
 	public partial class Login : System.Web.UI.Page
 	{
-		protected void Page_Load(object sender, EventArgs e)
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\OpenSource\Aptitude\woq\woq\App_Data\QuizDB.mdf;Integrated Security=True");
+
+        
+ 
+
+        protected void Page_Load(object sender, EventArgs e)
 		{
 			dob.Visible = false;
 		}
@@ -21,42 +28,38 @@ namespace woq
 			password.Text = dob.SelectedDate.ToShortDateString();
 		}
 
-		protected void b_login_Click(object sender, EventArgs e)
-		{
-			int count = 0;
-			SqlConnection con =
-				new SqlConnection(
-					@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Development\OpenSource\WOQ\Aptitude\WOQ\woq\App_Data\QuizDB.mdf;Integrated Security=True");
-			con.Open();
-			string str = "select * from [user] where username = '" + username.Text + "';";
-			SqlDataReader reader = null;
-			SqlCommand cmd = new SqlCommand()
-			{
-				CommandText = str,
-				Connection = con
-			};
+        protected void b_login_Click(object sender, EventArgs e)
+        {
 
-			reader = cmd.ExecuteReader();
+            try
+            {
+                string uid = username.Text;
+                string pass = password.Text;
+                con.Open();
+                string qry = "select * from [user] where username ='" + uid + "' and dob ='" + pass + "'";
+                SqlCommand cmd = new SqlCommand(qry, con);
+                SqlDataReader sdr = cmd.ExecuteReader();
+                if (sdr.Read())
+                {
+                    Response.Redirect("Quiz.aspx");
+                   
+                }
+                else
+                {
+                    Response.Write("<SCRIPT>alert('This is a message')</SCRIPT>");
 
-			while (reader.Read())
-			{
-				count++;
-				Data.username = reader["username"].ToString();
-				Data.name = reader["name"].ToString();
-			}
-			reader.Close();
-			con.Close();
 
-			if (string.IsNullOrEmpty(Data.username) || string.IsNullOrEmpty(Data.name))
-			{
-				username.Text = "Invalid User";
-			}
-			else
-			{
-				username.Text = "Exit";
-			}
+                    //ScriptManager.RegisterStartupScript(this.UP, typeof(string), "Alert", "alert('Message here');", true);
+                    //Label4.Text = "UserId & Password Is not correct Try again..!!";
 
-			password.Text = count.ToString();
-		}
+                }
+                con.Close();
+               
+            }
+            catch (Exception ex)
+            {
+                Response.Write(ex.Message);
+            }
+        }	
 	}
 }

@@ -131,6 +131,7 @@
     <Compile Include="QuizPage.aspx.designer.cs">
       <DependentUpon>QuizPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Data.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Master.Master" />

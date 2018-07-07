@@ -68,16 +68,33 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Add.aspx" />
     <Content Include="App_Data\QuizDB.mdf" />
     <Content Include="App_Data\QuizDB_log.ldf">
       <DependentUpon>QuizDB.mdf</DependentUpon>
     </Content>
+    <Content Include="Cat.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="QuestionPage.aspx" />
+    <Content Include="Quiz.aspx" />
     <Content Include="QuizPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cat.aspx.cs">
+      <DependentUpon>Cat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cat.aspx.designer.cs">
+      <DependentUpon>Cat.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -99,6 +116,13 @@
     </Compile>
     <Compile Include="QuestionPage.aspx.designer.cs">
       <DependentUpon>QuestionPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz.aspx.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Quiz.aspx.designer.cs">
+      <DependentUpon>Quiz.aspx</DependentUpon>
     </Compile>
     <Compile Include="QuizPage.aspx.cs">
       <DependentUpon>QuizPage.aspx</DependentUpon>

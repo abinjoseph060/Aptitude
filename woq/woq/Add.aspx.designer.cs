@@ -22,22 +22,22 @@ namespace woq {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Label5 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// question control.
+        /// Qn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox question;
+        protected global::System.Web.UI.WebControls.TextBox Qn;
         
         /// <summary>
         /// clear control.
@@ -49,22 +49,22 @@ namespace woq {
         protected global::System.Web.UI.WebControls.Button clear;
         
         /// <summary>
-        /// Label1 control.
+        /// Label control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label Label;
         
         /// <summary>
-        /// a control.
+        /// OptionA control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox a;
+        protected global::System.Web.UI.WebControls.TextBox OptionA;
         
         /// <summary>
         /// Label2 control.
@@ -76,13 +76,13 @@ namespace woq {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// b control.
+        /// OptionB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox b;
+        protected global::System.Web.UI.WebControls.TextBox OptionB;
         
         /// <summary>
         /// Label3 control.
@@ -94,13 +94,13 @@ namespace woq {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// c control.
+        /// OptionC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox c;
+        protected global::System.Web.UI.WebControls.TextBox OptionC;
         
         /// <summary>
         /// Label4 control.
@@ -112,13 +112,13 @@ namespace woq {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// d control.
+        /// OptionD control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox d;
+        protected global::System.Web.UI.WebControls.TextBox OptionD;
         
         /// <summary>
         /// Label6 control.
@@ -130,13 +130,13 @@ namespace woq {
         protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// Catg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList Catg;
         
         /// <summary>
         /// add_q control.

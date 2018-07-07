@@ -107,6 +107,7 @@
     <Compile Include="QuizPage.aspx.designer.cs">
       <DependentUpon>QuizPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Session.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Master.Master" />

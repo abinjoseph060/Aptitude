@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace woq
 {
-	public partial class AddQuestion : System.Web.UI.Page
+	public partial class QuizPage : System.Web.UI.Page
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{

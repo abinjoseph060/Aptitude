@@ -1,3 +1,6 @@
 
 woq/woq/App_Data/QuizDB.mdf
 woq/woq/App_Data/QuizDB_log.ldf
+*.mdf
+*.mdf
+*.ldf

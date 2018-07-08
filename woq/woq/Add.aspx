@@ -35,7 +35,7 @@
                         <asp:TextBox ID="question" runat="server" Width="438px"></asp:TextBox>
                     </td>
                     <td class="auto-style1">
-                        <asp:Button ID="clear" runat="server" Text="Clear" />
+                        <asp:Button ID="clear" runat="server" Text="Clear" OnClick="clear_Click" />
                     </td>
                 </tr>
                 <tr>
@@ -89,14 +89,19 @@
                     <td>
                         <asp:Label ID="Label6" runat="server" Text="Answer : "></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:DropDownList ID="DropDownList1" runat="server" Width="86px">
+                        <asp:DropDownList ID="DropDownList1" runat="server" Width="160px">
+                            <asp:ListItem>Select Answer</asp:ListItem>
+                            <asp:ListItem>a</asp:ListItem>
+                            <asp:ListItem>b</asp:ListItem>
+                            <asp:ListItem>c</asp:ListItem>
+                            <asp:ListItem>d</asp:ListItem>
                         </asp:DropDownList>
                     </td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>
-                        <asp:Button ID="add_q" runat="server" Text="Add" />
+                        <asp:Button ID="add_q" runat="server" Text="Add" OnClick="add_q_Click" />
                     </td>
                 </tr>
                 <tr>

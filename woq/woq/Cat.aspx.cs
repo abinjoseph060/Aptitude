@@ -11,6 +11,8 @@ namespace woq
 
 		protected void Button1_Click(object sender, EventArgs e)
 		{
+
+			Data.category = DropDownList1.SelectedIndex;
 			Response.Redirect("Add.aspx");
 		}
 	}

@@ -22,6 +22,10 @@
                     <td>:</td>
                     <td>
                         <asp:DropDownList ID="DropDownList1" runat="server">
+                            <asp:ListItem>Select Category</asp:ListItem>
+                            <asp:ListItem>Logical</asp:ListItem>
+                            <asp:ListItem>Technical</asp:ListItem>
+                            <asp:ListItem>Maths</asp:ListItem>
                         </asp:DropDownList>
                     </td>
                 </tr>

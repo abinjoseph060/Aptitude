@@ -6,23 +6,38 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>D:\Development\OpenSource\WOQ\Aptitude\WOQ\woq\bin\Release\Publish</_PublishTargetUrl>
+    <_PublishTargetUrl>D:\OpenSource\Aptitude\woq\woq\bin\Release\Publish</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="Add.aspx">
-      <publishTime>07/08/2018 14:43:37</publishTime>
+      <publishTime>07/08/2018 15:33:45</publishTime>
     </File>
     <File Include="Admin.aspx">
-      <publishTime>07/08/2018 16:02:51</publishTime>
+      <publishTime>07/08/2018 17:52:08</publishTime>
     </File>
     <File Include="App_Data/QuizDB.mdf">
-      <publishTime>07/08/2018 16:31:45</publishTime>
+      <publishTime>07/08/2018 17:52:08</publishTime>
     </File>
     <File Include="App_Data/QuizDB_log.ldf">
-      <publishTime>07/08/2018 16:31:45</publishTime>
+      <publishTime>07/08/2018 17:52:08</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>10/16/2017 14:14:32</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>12/03/2017 14:19:52</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.Entity.EF6.dll">
+      <publishTime>12/03/2017 14:19:52</publishTime>
+    </File>
+    <File Include="bin/MySQL.Data.EntityFrameworkCore.Design.dll">
+      <publishTime>12/03/2017 14:19:52</publishTime>
+    </File>
+    <File Include="bin/MySQL.Data.EntityFrameworkCore.dll">
+      <publishTime>12/03/2017 14:19:52</publishTime>
+    </File>
+    <File Include="bin/MySql.Web.dll">
+      <publishTime>12/03/2017 14:19:52</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>12/13/2017 22:09:38</publishTime>
@@ -169,28 +184,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>12/13/2017 22:09:38</publishTime>
     </File>
     <File Include="bin/woq.dll">
-      <publishTime>07/08/2018 16:57:08</publishTime>
+      <publishTime>07/08/2018 20:20:09</publishTime>
     </File>
     <File Include="bin/woq.pdb">
-      <publishTime>07/08/2018 16:57:08</publishTime>
+      <publishTime>07/08/2018 20:20:09</publishTime>
     </File>
     <File Include="Cat.aspx">
-      <publishTime>07/08/2018 15:42:58</publishTime>
+      <publishTime>07/08/2018 15:33:45</publishTime>
     </File>
     <File Include="Login.aspx">
-      <publishTime>07/07/2018 20:09:50</publishTime>
+      <publishTime>07/07/2018 19:47:52</publishTime>
     </File>
     <File Include="Master.Master">
       <publishTime>07/07/2018 15:51:36</publishTime>
     </File>
     <File Include="Quiz.aspx">
-      <publishTime>07/08/2018 16:11:45</publishTime>
+      <publishTime>07/08/2018 17:52:08</publishTime>
     </File>
     <File Include="QuizPage.aspx">
       <publishTime>07/07/2018 15:53:40</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/08/2018 16:57:12</publishTime>
+      <publishTime>07/08/2018 19:44:53</publishTime>
     </File>
   </ItemGroup>
 </Project>

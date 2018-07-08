@@ -6,8 +6,10 @@ namespace woq
 {
 	public partial class Login : System.Web.UI.Page
 	{
+		Data data = new Data();
 		protected void Page_Load(object sender, EventArgs e)
 		{
+			data.Clear();
 			dob.Visible = false;
 		}
 
@@ -27,12 +29,7 @@ namespace woq
 			if (username.Text == "admin" && password.Text == "41744")
 			{
 
-				Response.Redirect("Cat.aspx");
-			}
-			else if (username.Text == "admin" && password.Text == "41744")
-			{
-
-				Response.Redirect("Cat.aspx");
+				Response.Redirect("Admin.aspx");
 			}
 			else
 			{
@@ -49,21 +46,24 @@ namespace woq
 					string qry = "select * from [user] where username ='" + uid + "' and dob ='" + pass + "'";
 					SqlCommand cmd = new SqlCommand(qry, con);
 					SqlDataReader sdr = cmd.ExecuteReader();
-					if (sdr.Read())
+
+					while (sdr.Read())
 					{
-						Response.Redirect("Quiz.aspx");
+						Data.username = sdr["username"].ToString();
+						Data.name = sdr["name"].ToString();
+					}
+
+					if (string.IsNullOrEmpty(Data.username))
+					{
+						Response.Write("<SCRIPT>alert('Check Username or DOB')</SCRIPT>");
 					}
 					else
 					{
-						Response.Write("<SCRIPT>alert('This is a message')</SCRIPT>");
-
-
-						//ScriptManager.RegisterStartupScript(this.UP, typeof(string), "Alert", "alert('Message here');", true);
-						//Label4.Text = "UserId & Password Is not correct Try again..!!";
-
+						Response.Redirect("Quiz.aspx");
 					}
-
 					con.Close();
+
+					Response.Redirect("Quiz.aspx");
 
 				}
 				catch (Exception ex)

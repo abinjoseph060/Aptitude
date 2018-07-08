@@ -35,12 +35,13 @@
                         <asp:Label ID="Label2" runat="server" Text="Select quiz category :"></asp:Label>
                     </td>
                     <td>
-                        <asp:DropDownList ID="q_cat" runat="server">
+                        <asp:DropDownList ID="q_cat" runat="server" OnSelectedIndexChanged="q_cat_SelectedIndexChanged">
                             <asp:ListItem Value="Select Category">Select Category</asp:ListItem>
                             <asp:ListItem>Logical</asp:ListItem>
                             <asp:ListItem>Tehnical</asp:ListItem>
                             <asp:ListItem>Maths</asp:ListItem>
                         </asp:DropDownList>
+                        <asp:Button ID="Set" runat="server" OnClick="Set_Click" Text="Set" />
                     </td>
                 </tr>
                 <tr>
@@ -71,7 +72,9 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Button ID="Exit" runat="server" OnClick="Exit_Click" Text="Exit" />
+                    </td>
                 </tr>
             </table>
         </div>

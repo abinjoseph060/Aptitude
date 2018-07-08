@@ -16,7 +16,9 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td>
+                        <asp:Label ID="Name" runat="server"></asp:Label>
+                    </td>
                     <td>&nbsp;</td>
                     <td>
                         <asp:Label ID="Label2" runat="server" Text="Score :"></asp:Label>
@@ -59,7 +61,7 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>
-                        <asp:Button ID="next" runat="server" Text="Next" />
+                        <asp:Button ID="next" runat="server" Text="Next" OnClick="next_Click" />
                     </td>
                     <td>&nbsp;</td>
                 </tr>
